@@ -135,9 +135,10 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px
 
 /* stack */
 .stack{background:var(--panel);border-block:1px solid var(--line);padding-block:80px;overflow:hidden}
-.marquee{display:flex;gap:14px;width:max-content;animation:slide 40s linear infinite;margin-top:40px}
+.marquee{display:flex;width:max-content;animation:slide 60s linear infinite;margin-top:40px;will-change:transform}
+.stack:hover .marquee{animation-play-state:paused}
 .marquee.r{animation-direction:reverse;margin-top:14px}
-.marquee span{font-family:var(--mono);font-size:15px;padding:12px 22px;border-radius:999px;border:1px solid var(--line);background:var(--bg);white-space:nowrap;color:var(--fg)}
+.marquee span{margin-right:14px;flex:none;font-family:var(--mono);font-size:15px;padding:12px 22px;border-radius:999px;border:1px solid var(--line);background:var(--bg);white-space:nowrap;color:var(--fg)}
 .marquee span b{color:var(--link);font-weight:500;margin-right:8px}
 @keyframes slide{to{transform:translateX(-50%)}}
 .certs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:60px}
@@ -493,12 +494,10 @@ body.locked{overflow:hidden}
     <h2>The gear I <em>work with.</em></h2>
   </div>
   <div class="marquee" aria-hidden="true">
-    <span><b>&gt;</b>Cisco IOS</span><span><b>&gt;</b>OSPF</span><span><b>&gt;</b>BGP</span><span><b>&gt;</b>Python</span><span><b>&gt;</b>Netmiko</span><span><b>&gt;</b>Arista</span><span><b>&gt;</b>EVE-NG</span><span><b>&gt;</b>Wireshark</span><span><b>&gt;</b>Cloudflare</span><span><b>&gt;</b>Linux</span>
-    <span><b>&gt;</b>Cisco IOS</span><span><b>&gt;</b>OSPF</span><span><b>&gt;</b>BGP</span><span><b>&gt;</b>Python</span><span><b>&gt;</b>Netmiko</span><span><b>&gt;</b>Arista</span><span><b>&gt;</b>EVE-NG</span><span><b>&gt;</b>Wireshark</span><span><b>&gt;</b>Cloudflare</span><span><b>&gt;</b>Linux</span>
+    <span><b>&gt;</b>Cisco IOS</span><span><b>&gt;</b>OSPF</span><span><b>&gt;</b>BGP</span><span><b>&gt;</b>Python</span><span><b>&gt;</b>Netmiko</span><span><b>&gt;</b>Arista</span><span><b>&gt;</b>EVE-NG</span><span><b>&gt;</b>Wireshark</span><span><b>&gt;</b>Cloudflare</span><span><b>&gt;</b>Linux</span><span><b>&gt;</b>Cisco IOS</span><span><b>&gt;</b>OSPF</span><span><b>&gt;</b>BGP</span><span><b>&gt;</b>Python</span><span><b>&gt;</b>Netmiko</span><span><b>&gt;</b>Arista</span><span><b>&gt;</b>EVE-NG</span><span><b>&gt;</b>Wireshark</span><span><b>&gt;</b>Cloudflare</span><span><b>&gt;</b>Linux</span><span><b>&gt;</b>Cisco IOS</span><span><b>&gt;</b>OSPF</span><span><b>&gt;</b>BGP</span><span><b>&gt;</b>Python</span><span><b>&gt;</b>Netmiko</span><span><b>&gt;</b>Arista</span><span><b>&gt;</b>EVE-NG</span><span><b>&gt;</b>Wireshark</span><span><b>&gt;</b>Cloudflare</span><span><b>&gt;</b>Linux</span><span><b>&gt;</b>Cisco IOS</span><span><b>&gt;</b>OSPF</span><span><b>&gt;</b>BGP</span><span><b>&gt;</b>Python</span><span><b>&gt;</b>Netmiko</span><span><b>&gt;</b>Arista</span><span><b>&gt;</b>EVE-NG</span><span><b>&gt;</b>Wireshark</span><span><b>&gt;</b>Cloudflare</span><span><b>&gt;</b>Linux</span>
   </div>
   <div class="marquee r" aria-hidden="true">
-    <span><b>#</b>VLANs</span><span><b>#</b>IPSec</span><span><b>#</b>802.1X</span><span><b>#</b>NAT/PAT</span><span><b>#</b>HSRP</span><span><b>#</b>PRTG</span><span><b>#</b>Bash</span><span><b>#</b>DNS/DHCP</span><span><b>#</b>SSL/TLS</span><span><b>#</b>IPv6</span>
-    <span><b>#</b>VLANs</span><span><b>#</b>IPSec</span><span><b>#</b>802.1X</span><span><b>#</b>NAT/PAT</span><span><b>#</b>HSRP</span><span><b>#</b>PRTG</span><span><b>#</b>Bash</span><span><b>#</b>DNS/DHCP</span><span><b>#</b>SSL/TLS</span><span><b>#</b>IPv6</span>
+    <span><b>#</b>VLANs</span><span><b>#</b>IPSec</span><span><b>#</b>802.1X</span><span><b>#</b>NAT/PAT</span><span><b>#</b>HSRP</span><span><b>#</b>PRTG</span><span><b>#</b>Bash</span><span><b>#</b>DNS/DHCP</span><span><b>#</b>SSL/TLS</span><span><b>#</b>IPv6</span><span><b>#</b>VLANs</span><span><b>#</b>IPSec</span><span><b>#</b>802.1X</span><span><b>#</b>NAT/PAT</span><span><b>#</b>HSRP</span><span><b>#</b>PRTG</span><span><b>#</b>Bash</span><span><b>#</b>DNS/DHCP</span><span><b>#</b>SSL/TLS</span><span><b>#</b>IPv6</span><span><b>#</b>VLANs</span><span><b>#</b>IPSec</span><span><b>#</b>802.1X</span><span><b>#</b>NAT/PAT</span><span><b>#</b>HSRP</span><span><b>#</b>PRTG</span><span><b>#</b>Bash</span><span><b>#</b>DNS/DHCP</span><span><b>#</b>SSL/TLS</span><span><b>#</b>IPv6</span><span><b>#</b>VLANs</span><span><b>#</b>IPSec</span><span><b>#</b>802.1X</span><span><b>#</b>NAT/PAT</span><span><b>#</b>HSRP</span><span><b>#</b>PRTG</span><span><b>#</b>Bash</span><span><b>#</b>DNS/DHCP</span><span><b>#</b>SSL/TLS</span><span><b>#</b>IPv6</span>
   </div>
   <p class="wrap" style="position:absolute;left:-9999px">Tools: Cisco IOS, OSPF, BGP, Python, Netmiko, Arista, EVE-NG, Wireshark, Cloudflare, Linux, VLANs, IPSec, 802.1X, NAT, HSRP, PRTG, Bash, DNS, DHCP, SSL/TLS, IPv6.</p>
   <div class="wrap">
