@@ -261,8 +261,16 @@ body.locked{overflow:hidden}
 
 @media (max-width:920px){
   .herogrid{grid-template-columns:1fr;gap:28px}
-  .me{order:-1;justify-self:start;width:190px}
-  .me .lbl{display:none}
+  .me{order:-1;justify-self:start;width:160px}
+  .me .lbl{font-size:11px;padding:4px 8px}
+  .me .lbl.a,.me .lbl.b{left:calc(100% + 14px);right:auto;bottom:auto}
+  .me .lbl.a{top:30%}
+  .me .lbl.b{top:52%}
+}
+@media (max-width:420px){
+  .me .lbl{white-space:normal;width:max-content;max-width:calc(100vw - 222px);line-height:1.35}
+  .me .lbl.a{top:22%}
+  .me .lbl.b{top:58%}
   .svcs,.proj,.certs{grid-template-columns:1fr}
   .featgrid{grid-template-columns:1fr;gap:40px}
   .statrow{grid-template-columns:repeat(2,minmax(0,1fr))}
